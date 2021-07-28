@@ -1,0 +1,22 @@
+[package]
+name = "pretty-ping"
+version = "0.1.0"
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[[bin]]
+name = "pretty-ping"
+path = "src/bin/main.rs"
+
+[dependencies]
+log = "0.4"
+rand = "0.8.4"
+colored = "2"
+thiserror = "1.0.26"
+clap = "2.33.3"
+ctrlc = { version = "3.1.9", features = ["termination"] }
+socket2 = { version = "0.4.1", features = ["all"] }
+pnet = "0.28.0"
+pnet_macros_support = "0.28.0"
+pnet_packet = "0.28.0"
